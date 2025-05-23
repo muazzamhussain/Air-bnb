@@ -1,0 +1,92 @@
+<% layout("./layouts/boilerplate.ejs") %>
+<style>
+  .category-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    color: black;
+    opacity: 0.6;
+    white-space: nowrap;
+  }
+  .category-icon i {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .scrollbar-x {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .category-icon:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+</style>
+<!-- Category Icons Bar -->
+
+  <div class="d-flex align-items-center gap-4 my-3">
+    <div class="category-icon">
+      <i class="fas fa-fire"></i><span>Trending</span>
+    </div>
+    <div class="category-icon">
+      <i class="fas fa-bed"></i><span>Rooms</span>
+    </div>
+    <div class="category-icon">
+      <i class="fas fa-landmark"></i><span>Iconic Cities</span>
+    </div>
+    <div class="category-icon">
+      <i class="fas fa-mountain"></i><span>Mountains</span>
+    </div>
+    <div class="category-icon">
+      <i class="fas fa-chess-rook"></i><span>Castles</span>
+    </div>
+    <div class="category-icon">
+      <i class="fas fa-swimmer"></i><span>Amazing Pools</span>
+    </div>
+    <div class="category-icon">
+      <i class="fas fa-campground"></i><span>Camping</span>
+    </div>
+    <div class="category-icon">
+      <i class="fas fa-tractor"></i><span>Farms</span>
+    </div>
+    <div class="category-icon">
+      <i class="fas fa-snowflake"></i><span>Arctic</span>
+    </div>
+    <div class="category-icon">
+      <i class="fas fa-circle"></i><span>Domes</span>
+    </div>
+    <div class="category-icon">
+      <i class="fas fa-ship"></i><span>Boats</span>
+    </div>
+    <div class="form-check form-switch ms-auto">
+      <input class="form-check-input" type="checkbox" id="taxToggle" />
+      <label class="form-check-label" for="taxToggle"
+        >Display total after taxes</label
+      >
+    </div>
+  </div>
+  <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+    <% for(listing of allListings){ %>
+    <a href="/listings/<%= listing._id %> " class="listing-link">
+      <div class="card col listing-card">
+        <img
+          src="<%=listing.image.url%>"
+          class="card-img-top"
+          alt="listing-image"
+          style="height: 20rem"
+        />
+
+        <div class="card-img-overlay">
+          <p class="card-text">click for more details</p>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= listing.title %></h5>
+          <p class="card-text">
+            <%= listing.price.toLocaleString("en-PK") %> /night
+          </p>
+        </div>
+      </div>
+    </a>
+    <% } %>
+  </div>
+</div>

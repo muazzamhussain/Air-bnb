@@ -1,0 +1,9 @@
+<% layout("layouts/boilerplate") %>
+<div class="text-center mt-5">
+  <h1>Error <%= status %></h1>
+  <div class="alert alert-warning d-flex align-items-center" role="alert">
+    <i class="fa-solid fa-triangle-exclamation ms-4 me-4"></i>
+    <div><%= message %></div>
+  </div>
+  <a href="/listings" class="btn btn-primary mt-3">Back to Listings</a>
+</div>

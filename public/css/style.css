@@ -1,0 +1,88 @@
+.jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+.fa-compass {
+  color: rgb(255, 74, 104);
+  font-size: 1.7rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.footer .socials i {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+.links a {
+  color: #2e2e2e;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  width: 100% !important;
+  border-radius: 1rem !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.listing-link {
+  text-decoration: none !important;
+}
+
+.card-img-overlay {
+  text-align: center;
+  opacity: 0;
+  background-color: #fff;
+}
+.card-img-overlay:hover {
+  opacity: 0.3;
+}
+
+.show-img {
+  height: 30vh;
+}
+
+.show-btns {
+  display: flex;
+}
+
+.fa-triangle-exclamation {
+  color: rgb(255, 89, 0);
+  font-size: 2rem;
+}
