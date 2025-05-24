@@ -1,4 +1,4 @@
-# 🌍 Wandeerlust
+# 🌍 Wanderlust
 
 **Live Site:** [https://air-bnb-ptha.onrender.com/](https://air-bnb-ptha.onrender.com/)
 
