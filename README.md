@@ -26,6 +26,9 @@ Wandeerlust is a full-featured travel listing and review platform inspired by Ai
 ├── controllers/       # Route logic for listings, users, and reviews
 ├── models/            # Mongoose models
 ├── routes/            # Express route handlers
+├── public/            # Public files
+│   ├── css/           # CSS files
+│   ├── js/            # Javascript files
 ├── views/             # EJS templates
 │   ├── listings/      # Listing-related views (edit, index, new, show)
 │   ├── users/         # Authentication-related views
